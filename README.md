@@ -1,9 +1,6 @@
 # MarChie: a Compact Open Source Tool for Analyzing Discrete **Mar**kov **Ch**ains
 
-[![Generic badge](https://img.shields.io/badge/PyPI-0.1-green.svg)](https://pypi.org/project/MarChie/)
-[![Generic badge](https://img.shields.io/badge/GitHub-Source-red.svg)](https://github.com/maxschmaltz/MarChie)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Generic badge](https://img.shields.io/badge/PyPI-0.3-green.svg)](https://pypi.org/project/MarChie/) [![Generic badge](https://img.shields.io/badge/GitHub-Source-red.svg)](https://github.com/maxschmaltz/MarChie) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
 
 ----------
@@ -70,18 +67,18 @@ Given transition probability matrix and (optional) initial state probability dis
 
 ## Quick Start
 
-`March` is a `pip`-installable package. You can access it directly from PyPI:
+`Marchie` is a `pip`-installable package. You can access it directly from PyPI:
 
 ```bash
-pip install MarChie
+pip install marchie
 ```
 
-The main object that is really intended to be used is `class marchie.marchie.March`. The class requires only transition probability matrix and (optionally) initial state probability distribution vector as arguments; if you provide no initial distribution vector, it will be generated.
+The main object that is really intended to be used is `class marchie.marchie.Marchie`. The class requires only transition probability matrix and (optionally) initial state probability distribution vector as arguments; if you provide no initial distribution vector, it will be generated.
 
 ```python
 
 >>> import numpy as np
->>> from marchie.marchie import March
+>>> from marchie import Marchie
 
 >>> trans_mat = np.array([
     [1,     0,     0  ],

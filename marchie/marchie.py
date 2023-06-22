@@ -160,7 +160,7 @@ class MarChie:
 
     Returns
     -------
-    init_distr : `March._matrix` of shape (`n_states`, )
+    init_distr : `Marchie._matrix` of shape (`n_states`, )
         distribution vector
     '''
 
@@ -172,7 +172,7 @@ class MarChie:
 
     Returns
     -------
-    trans_mat : `March._matrix` of shape (`n_states`, `n_states`)
+    trans_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
         transition matrix
     '''
 
@@ -185,7 +185,7 @@ class MarChie:
 
     Returns
     -------
-    adjacency_mat : `March._matrix` of shape (`n_states`, `n_states`)
+    adjacency_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
         boolean-like matrix indicating one-step paths between states,
         where `adjacency_mat[i, j]` is \(1\) if the probability of tranition 
         from the state `i` to the state `j` is not zero, else \(0\)
@@ -215,7 +215,7 @@ class MarChie:
 
     Returns
     -------
-    reachability_mat : `March._matrix` of shape (`n_states`, `n_states`)
+    reachability_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
         boolean-like matrix indicating paths between states,
         where `reachability_mat[i, j]` is \(1\) if there is a path 
         from the state `i` to the state `j`, else \(0\)
@@ -245,7 +245,7 @@ class MarChie:
 
     Returns
     -------
-    reachability_mat_tr : `March._matrix` of shape (`n_states`, `n_states`)
+    reachability_mat_tr : `Marchie._matrix` of shape (`n_states`, `n_states`)
         boolean-like matrix indicating paths between states,
         where `reachability_mat_tr[i, j]` is \(1\) if there is a path 
         from the state `j` to the state `i`, else \(0\)
@@ -275,7 +275,7 @@ class MarChie:
 
     Returns
     -------
-    communication_mat : `March._matrix` of shape (`n_states`, `n_states`)
+    communication_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
         boolean-like matrix indicating bidirectional paths between states,
         where `communication_mat[i, j]` is \(1\) if there is a path 
         from the state `j` to the state `i` and from `j` to `i`, else \(0\)
@@ -306,7 +306,7 @@ class MarChie:
 
     Returns
     -------
-    communication_mat_comp : `March._matrix` of shape (`n_states`, `n_states`)
+    communication_mat_comp : `Marchie._matrix` of shape (`n_states`, `n_states`)
         boolean-like matrix indicating absence of bidirectional paths between states,
         where `communication_mat[i, j]` is \(1\) if there is no path 
         from the state `j` to the state `i` and from `j` to `i`, else 0
@@ -333,7 +333,7 @@ class MarChie:
 
     Returns
     -------
-    classification_mat : `March._matrix` of shape (`n_states`, `n_states`)
+    classification_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
         boolean-like matrix where `classification_mat[i, j]` is \(1\) if there is a path 
         from the state `i` to the state `j` but states `j` and `i` do not communicate, 0 otherwise
 
@@ -362,7 +362,7 @@ class MarChie:
 
     Returns
     -------
-    classification_mat_ext : `March._matrix` of shape (`n_states`, `n_states` + 1)
+    classification_mat_ext : `Marchie._matrix` of shape (`n_states`, `n_states` + 1)
         boolean-like matrix where the last column indicates essentiality of states:
         if classification_mat_ext[`i`, `n_states` + 1] equals 1, the state `i`
         is inessential, if 0, is essential
@@ -389,7 +389,7 @@ class MarChie:
 
     Returns
     -------
-    equivalency_cls_mat : `March._matrix` of shape (`n_classes`, `n_essential`)
+    equivalency_cls_mat : `Marchie._matrix` of shape (`n_classes`, `n_essential`)
         matrix showing belonging of each essential (!) state to its equivalence class;
         `equivalency_cls_mat[i, j]` indicates that the state `j` is in `i`th equivalence class
 
@@ -1083,7 +1083,7 @@ class MarChie:
 
         Returns
         -------
-        adjacency_mat : `March._matrix` of shape (`n_states`, `n_states`)
+        adjacency_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
             boolean-like matrix indicating one-step paths between states,
             where `adjacency_mat[i, j]` is \(1\) if the probability of tranition 
             from the state `i` to the state `j` is not zero, else \(0\)
@@ -1118,7 +1118,7 @@ class MarChie:
 
         Returns
         -------
-        reachability_mat : `March._matrix` of shape (`n_states`, `n_states`)
+        reachability_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
             boolean-like matrix indicating paths between states,
             where `reachability_mat[i, j]` is \(1\) if there is a path 
             from the state `i` to the state `j`, else \(0\)
@@ -1160,7 +1160,7 @@ class MarChie:
 
         Returns
         -------
-        reachability_mat_tr : `March._matrix` of shape (`n_states`, `n_states`)
+        reachability_mat_tr : `Marchie._matrix` of shape (`n_states`, `n_states`)
             boolean-like matrix indicating paths between states,
             where `reachability_mat_tr[i, j]` is \(1\) if there is a path 
             from the state `j` to the state `i`, else \(0\)
@@ -1194,7 +1194,7 @@ class MarChie:
 
         Returns
         -------
-        communication_mat : `March._matrix` of shape (`n_states`, `n_states`)
+        communication_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
             boolean-like matrix indicating bidirectional paths between states,
             where `communication_mat[i, j]` is \(1\) if there is a path 
             from the state `j` to the state `i` and from `j` to `i`, else \(0\)
@@ -1229,7 +1229,7 @@ class MarChie:
 
         Returns
         -------
-        communication_mat_comp : `March._matrix` of shape (`n_states`, `n_states`)
+        communication_mat_comp : `Marchie._matrix` of shape (`n_states`, `n_states`)
             boolean-like matrix indicating absence of bidirectional paths between states,
             where `communication_mat[i, j]` is \(1\) if there is no path 
             from the state `j` to the state `i` and from `j` to `i`, else 0
@@ -1261,7 +1261,7 @@ class MarChie:
 
         Returns
         -------
-        classification_mat : `March._matrix` of shape (`n_states`, `n_states`)
+        classification_mat : `Marchie._matrix` of shape (`n_states`, `n_states`)
             boolean-like matrix where `classification_mat[i, j]` is \(1\) if there is a path 
             from the state `i` to the state `j` but states `j` and `i` do not communicate, 0 otherwise
 
@@ -1294,7 +1294,7 @@ class MarChie:
 
         Returns
         -------
-        classification_mat_ext : `March._matrix` of shape (`n_states`, `n_states` + 1)
+        classification_mat_ext : `Marchie._matrix` of shape (`n_states`, `n_states` + 1)
             boolean-like matrix where the last column indicates essentiality of states:
             if classification_mat_ext[`i`, `n_states` + 1] equals 1, the state `i`
             is inessential, if 0, is essential

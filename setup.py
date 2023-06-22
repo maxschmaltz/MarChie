@@ -7,7 +7,7 @@ with open('./README.md') as readme: long_description = readme.read()
 
 setuptools.setup(
     name='marchie',
-    version='0.1',
+    version='0.3',
     author='Max Schmaltz',
     author_email='schmaltzmax@gmail.com',
     description=desc,
