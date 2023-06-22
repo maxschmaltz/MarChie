@@ -1,4 +1,4 @@
-# `MarChie`: a Compact Open Source Tool for Analyzing Discrete **Mar**kov **Ch**ains
+# MarChie: a Compact Open Source Tool for Analyzing Discrete **Mar**kov **Ch**ains
 
 [![Generic badge](https://img.shields.io/badge/PyPI-0.1-green.svg)](https://pypi.org/project/MarChie/)
 [![Generic badge](https://img.shields.io/badge/GitHub-Source-red.svg)](https://github.com/maxschmaltz/MarChie)
