@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>MarChie.marchie API documentation</title>
+<title>marchie.marchie API documentation</title>
 <meta name="description" content="" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
@@ -20,7 +20,7 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>MarChie.marchie</code></h1>
+<h1 class="title">Module <code>marchie.marchie</code></h1>
 </header>
 <section id="section-intro">
 <details class="source">
@@ -1749,7 +1749,7 @@ class MarChie:
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="MarChie.marchie.MarChie"><code class="flex name class">
+<dt id="marchie.marchie.MarChie"><code class="flex name class">
 <span>class <span class="ident">MarChie</span></span>
 <span>(</span><span>*, init_distr: numpy.ndarray = None, trans_mat: numpy.ndarray)</span>
 </code></dt>
@@ -1770,7 +1770,7 @@ to the state <span><span class="MathJax_Preview">j</span><script type="math/tex"
 </li>
 </ol>
 <p>Given transition probability matrix and (optional) initial state probability distribution,
-<code><a title="MarChie.marchie.MarChie" href="#MarChie.marchie.MarChie">MarChie</a></code> does the following:</p>
+<code><a title="marchie.marchie.MarChie" href="#marchie.marchie.MarChie">MarChie</a></code> does the following:</p>
 <ul>
 <li>computes adjacency matrix;</li>
 <li>computes reachability matrix (using adjacency matrix);</li>
@@ -3508,7 +3508,7 @@ otherwise the matrix is invalid.</p></div>
 </details>
 <h3>Class variables</h3>
 <dl>
-<dt id="MarChie.marchie.MarChie.adjacency_mat"><code class="name">var <span class="ident">adjacency_mat</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.adjacency_mat"><code class="name">var <span class="ident">adjacency_mat</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="adjacency-matrix-of-the-chain">Adjacency matrix of the chain.</h3>
 <p>Adjacency matrix is a matrix that indicates existence of one-step paths between states,
@@ -3540,7 +3540,7 @@ A = (a_{ij}) | a_{ij} =
 </script></span></p>
 <p>where <span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span> is adjacency matrix, <span><span class="MathJax_Preview">(p_{ij})</span><script type="math/tex">(p_{ij})</script></span> is transition matrix.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.classification_mat"><code class="name">var <span class="ident">classification_mat</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.classification_mat"><code class="name">var <span class="ident">classification_mat</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="classification-matrix-of-the-chain">Classification matrix of the chain.</h3>
 <p>Classification matrix is a step for building extended classification matrix.</p>
@@ -3570,7 +3570,7 @@ T = D \times \overline C = (t_{ij}) | t_{ij} =
 <p>where <span><span class="MathJax_Preview">T</span><script type="math/tex">T</script></span> is classification matrix, <span><span class="MathJax_Preview">d_{ij}</span><script type="math/tex">d_{ij}</script></span> is reachability matrix,
 <span><span class="MathJax_Preview">(\overline c_{ij})</span><script type="math/tex">(\overline c_{ij})</script></span> is communication matrix complement.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.classification_mat_ext"><code class="name">var <span class="ident">classification_mat_ext</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.classification_mat_ext"><code class="name">var <span class="ident">classification_mat_ext</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="classification-matrix-extension">Classification matrix extension.</h3>
 <p>Classification matrix extension indicates essential and inessential states.
@@ -3603,7 +3603,7 @@ T_{ext} = T|(t_{i(N + 1)}) | t_{i(N + 1)} =
 <p>where <span><span class="MathJax_Preview">T_{ext}</span><script type="math/tex">T_{ext}</script></span> is classification matrix extension, <span><span class="MathJax_Preview">T</span><script type="math/tex">T</script></span> is classification matrix,
 <span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> is the number of states in the system.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.communication_mat"><code class="name">var <span class="ident">communication_mat</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.communication_mat"><code class="name">var <span class="ident">communication_mat</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="communication-matrix-of-the-chain">Communication matrix of the chain.</h3>
 <p>Communication matrix is a matrix that indicates existence of bidirectional paths between states,
@@ -3637,7 +3637,7 @@ C = (c_{ij}) = D \times D^T | c_{ij} =
 <p>where <span><span class="MathJax_Preview">C</span><script type="math/tex">C</script></span> is communication matrix, <span><span class="MathJax_Preview">D</span><script type="math/tex">D</script></span> is reachability matrix,
 <span><span class="MathJax_Preview">D^T</span><script type="math/tex">D^T</script></span> is transposed reachability matrix, <span><span class="MathJax_Preview">→</span><script type="math/tex">→</script></span> marks a path.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.communication_mat_comp"><code class="name">var <span class="ident">communication_mat_comp</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.communication_mat_comp"><code class="name">var <span class="ident">communication_mat_comp</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="communication-matrix-complement">Communication matrix complement.</h3>
 <p>Communication matrix complement is a matrix that indicates nonexistence of bidirectional paths between states,
@@ -3670,7 +3670,7 @@ from the state <code>j</code> to the state <code>i</code> and from <code>j</code
 </script></span></p>
 <p>where <span><span class="MathJax_Preview">\overline C</span><script type="math/tex">\overline C</script></span> is communication matrix complement, <span><span class="MathJax_Preview">c_{ij}</span><script type="math/tex">c_{ij}</script></span> is communication matrix.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.end_behavior"><code class="name">var <span class="ident">end_behavior</span> : end_behavior.EndBehavior</code></dt>
+<dt id="marchie.marchie.MarChie.end_behavior"><code class="name">var <span class="ident">end_behavior</span> : end_behavior.EndBehavior</code></dt>
 <dd>
 <div class="desc"><p>End behavior of a Markov chain can be described with 3 properties:</p>
 <ul>
@@ -3699,7 +3699,7 @@ accessible in <code>time_percentage</code> property</p>
 <p>that only regular chains converge to those probabilities strongly;
 cyclic and mixed chains show different empirical end behavior.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.equivalency_cls_mat"><code class="name">var <span class="ident">equivalency_cls_mat</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.equivalency_cls_mat"><code class="name">var <span class="ident">equivalency_cls_mat</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="equivalency-matrix-of-the-chain">Equivalency matrix of the chain.</h3>
 <h2 id="returns">Returns</h2>
@@ -3717,7 +3717,7 @@ K = (k_{ij}) | k_{it} \Longleftrightarrow i \in EC_t
 </script></span></p>
 <p>where <span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span> is equivalency matrix.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.init_distr"><code class="name">var <span class="ident">init_distr</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.init_distr"><code class="name">var <span class="ident">init_distr</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="initial-state-distribution-vector">Initial state distribution vector.</h3>
 <p>Vector <span><span class="MathJax_Preview">\pi = (\pi_0, \pi_1, ..., \pi_n)</span><script type="math/tex">\pi = (\pi_0, \pi_1, ..., \pi_n)</script></span>, where <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> is the number
@@ -3728,7 +3728,7 @@ of states in the system, and <span><span class="MathJax_Preview">\pi_i</span><sc
 <dd>distribution vector</dd>
 </dl></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.properties"><code class="name">var <span class="ident">properties</span> : structure.ChainProperties</code></dt>
+<dt id="marchie.marchie.MarChie.properties"><code class="name">var <span class="ident">properties</span> : structure.ChainProperties</code></dt>
 <dd>
 <div class="desc"><p>Markov Chain classification:</p>
 <ol>
@@ -3777,7 +3777,7 @@ Reminder: a <span><span class="MathJax_Preview">EC</span><script type="math/tex"
 <p>Thus, we'll have a "linguistic-like" notation, e.g. a cyclic polyergodic Markov Chain
 could be notated as <code>[+reducible][+polyergodic][-regular][∅absorbing][-strong_convergence]</code>.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.reachability_mat"><code class="name">var <span class="ident">reachability_mat</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.reachability_mat"><code class="name">var <span class="ident">reachability_mat</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="reachability-matrix-of-the-chain">Reachability matrix of the chain.</h3>
 <p>Reachability matrix is a matrix that indicates existence of paths between states,
@@ -3810,7 +3810,7 @@ D = (d_{ij}) | d_{ij} =
 </script></span></p>
 <p>where <span><span class="MathJax_Preview">D</span><script type="math/tex">D</script></span> is reachability matrix, <span><span class="MathJax_Preview">→</span><script type="math/tex">→</script></span> marks a path.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.reachability_mat_tr"><code class="name">var <span class="ident">reachability_mat_tr</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.reachability_mat_tr"><code class="name">var <span class="ident">reachability_mat_tr</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="transposed-reachability-matrix-of-the-chain">Transposed reachability matrix of the chain.</h3>
 <p>Reachability matrix is a matrix that indicates existence of inverse paths between states,
@@ -3843,7 +3843,7 @@ D^T = (d^T_{ij}) | d^T_{ij} =
 </script></span></p>
 <p>where <span><span class="MathJax_Preview">D^T</span><script type="math/tex">D^T</script></span> is transposed reachability matrix, <span><span class="MathJax_Preview">→</span><script type="math/tex">→</script></span> marks a path.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.structure"><code class="name">var <span class="ident">structure</span> : structure.ChainStructure</code></dt>
+<dt id="marchie.marchie.MarChie.structure"><code class="name">var <span class="ident">structure</span> : structure.ChainStructure</code></dt>
 <dd>
 <div class="desc"><h3 id="structure-of-the-chain">Structure of the chain.</h3>
 <p>That includes:</p>
@@ -3925,7 +3925,7 @@ d = \text{GCD}(|(i → i)_1|, ..., |(i → i)_r|)
 <span><span class="MathJax_Preview">N_{EC_k}</span><script type="math/tex">N_{EC_k}</script></span> is number of states in equivalence class <span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span>, <span><span class="MathJax_Preview">N_e</span><script type="math/tex">N_e</script></span> is number of essential states in the system,
 <span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> is number of states in the system.</p></div>
 </dd>
-<dt id="MarChie.marchie.MarChie.trans_mat"><code class="name">var <span class="ident">trans_mat</span> : MarChie.marchie.MarChie._matrix</code></dt>
+<dt id="marchie.marchie.MarChie.trans_mat"><code class="name">var <span class="ident">trans_mat</span> : marchie.marchie.MarChie._matrix</code></dt>
 <dd>
 <div class="desc"><h3 id="transition-probability-matrix">Transition probability matrix</h3>
 <p>Matrix <span><span class="MathJax_Preview">P = (p_{ij})</span><script type="math/tex">P = (p_{ij})</script></span> where <span><span class="MathJax_Preview">p_{ij}</span><script type="math/tex">p_{ij}</script></span> is the probability to go
@@ -3939,7 +3939,7 @@ to the state <span><span class="MathJax_Preview">j</span><script type="math/tex"
 </dl>
 <h3>Static methods</h3>
 <dl>
-<dt id="MarChie.marchie.MarChie.generate_chain"><code class="name flex">
+<dt id="marchie.marchie.MarChie.generate_chain"><code class="name flex">
 <span>def <span class="ident">generate_chain</span></span>(<span>n_states: int) ‑> Tuple[numpy.ndarray]</span>
 </code></dt>
 <dd>
@@ -3994,7 +3994,7 @@ def generate_chain(cls, n_states: int) -&gt; Tuple[np.ndarray]:
 </dl>
 <h3>Instance variables</h3>
 <dl>
-<dt id="MarChie.marchie.MarChie.canonical_mapping"><code class="name">var <span class="ident">canonical_mapping</span> : Dict[int, int]</code></dt>
+<dt id="marchie.marchie.MarChie.canonical_mapping"><code class="name">var <span class="ident">canonical_mapping</span> : Dict[int, int]</code></dt>
 <dd>
 <div class="desc"><h3 id="returns-mapping-between-original-states-and-canonical-numbers">Returns mapping between original states and canonical numbers.</h3>
 <h2 id="returns">Returns</h2>
@@ -4029,7 +4029,7 @@ def canonical_mapping(self) -&gt; Dict[int, int]:
     return mapping</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.n_cyclic_subclasses"><code class="name">var <span class="ident">n_cyclic_subclasses</span> : int</code></dt>
+<dt id="marchie.marchie.MarChie.n_cyclic_subclasses"><code class="name">var <span class="ident">n_cyclic_subclasses</span> : int</code></dt>
 <dd>
 <div class="desc"><h3 id="returns-the-number-of-all-cyclic-subclasses-from-all-equivalency-classes-of-the-system">Returns the number of all cyclic subclasses (from all equivalency classes) of the system.</h3>
 <h2 id="returns">Returns</h2>
@@ -4057,7 +4057,7 @@ def n_cyclic_subclasses(self) -&gt; int:
     return n_subclasses</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.n_equivalency_classes"><code class="name">var <span class="ident">n_equivalency_classes</span> : int</code></dt>
+<dt id="marchie.marchie.MarChie.n_equivalency_classes"><code class="name">var <span class="ident">n_equivalency_classes</span> : int</code></dt>
 <dd>
 <div class="desc"><h3 id="returns-the-number-of-equivalency-classes-of-the-system">Returns the number of equivalency classes of the system.</h3>
 <h2 id="returns">Returns</h2>
@@ -4085,7 +4085,7 @@ def n_equivalency_classes(self) -&gt; int:
     return n_eq_classes</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.n_essential_states"><code class="name">var <span class="ident">n_essential_states</span> : int</code></dt>
+<dt id="marchie.marchie.MarChie.n_essential_states"><code class="name">var <span class="ident">n_essential_states</span> : int</code></dt>
 <dd>
 <div class="desc"><h3 id="returns-the-number-of-essential-states-of-the-system">Returns the number of essential states of the system.</h3>
 <h2 id="returns">Returns</h2>
@@ -4113,7 +4113,7 @@ def n_essential_states(self) -&gt; int:
     return n_essential_states</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.n_inessential_states"><code class="name">var <span class="ident">n_inessential_states</span> : int</code></dt>
+<dt id="marchie.marchie.MarChie.n_inessential_states"><code class="name">var <span class="ident">n_inessential_states</span> : int</code></dt>
 <dd>
 <div class="desc"><h3 id="returns-the-number-of-inessential-states-of-the-system">Returns the number of inessential states of the system.</h3>
 <h2 id="returns">Returns</h2>
@@ -4141,7 +4141,7 @@ def n_inessential_states(self) -&gt; int:
     return n_inessential_states</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.n_states"><code class="name">var <span class="ident">n_states</span> : int</code></dt>
+<dt id="marchie.marchie.MarChie.n_states"><code class="name">var <span class="ident">n_states</span> : int</code></dt>
 <dd>
 <div class="desc"><h3 id="returns-the-number-of-states-of-the-system">Returns the number of states of the system.</h3>
 <h2 id="returns">Returns</h2>
@@ -4169,7 +4169,7 @@ def n_states(self) -&gt; int:
     return n_states</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.shape"><code class="name">var <span class="ident">shape</span> : Tuple[int, int]</code></dt>
+<dt id="marchie.marchie.MarChie.shape"><code class="name">var <span class="ident">shape</span> : Tuple[int, int]</code></dt>
 <dd>
 <div class="desc"><h3 id="returns-the-shape-of-the-transition-matrix">Returns the shape of the transition matrix.</h3>
 <h2 id="returns">Returns</h2>
@@ -4200,7 +4200,7 @@ def shape(self) -&gt; Tuple[int, int]:
 </dl>
 <h3>Methods</h3>
 <dl>
-<dt id="MarChie.marchie.MarChie.first_trans_insteps"><code class="name flex">
+<dt id="marchie.marchie.MarChie.first_trans_insteps"><code class="name flex">
 <span>def <span class="ident">first_trans_insteps</span></span>(<span>self, n_steps: int, use_canonical=True) ‑> numpy.ndarray</span>
 </code></dt>
 <dd>
@@ -4301,7 +4301,7 @@ in such a big amount of steps.</p></div>
     return first_trans_mat</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.first_trans_nolaterthan"><code class="name flex">
+<dt id="marchie.marchie.MarChie.first_trans_nolaterthan"><code class="name flex">
 <span>def <span class="ident">first_trans_nolaterthan</span></span>(<span>self, n_steps: int, use_canonical=True) ‑> numpy.ndarray</span>
 </code></dt>
 <dd>
@@ -4383,7 +4383,7 @@ it might be possible to get to several states for the first time with a high pro
     return first_trans_mat_nolater</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.states_insteps"><code class="name flex">
+<dt id="marchie.marchie.MarChie.states_insteps"><code class="name flex">
 <span>def <span class="ident">states_insteps</span></span>(<span>self, n_steps: int, use_canonical=True) ‑> numpy.ndarray</span>
 </code></dt>
 <dd>
@@ -4455,7 +4455,7 @@ of the probabilities of all the states will be <span><span class="MathJax_Previe
     return state_distr_n</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.to_graph"><code class="name flex">
+<dt id="marchie.marchie.MarChie.to_graph"><code class="name flex">
 <span>def <span class="ident">to_graph</span></span>(<span>self, use_canonical=True)</span>
 </code></dt>
 <dd>
@@ -4514,7 +4514,7 @@ of the probabilities of all the states will be <span><span class="MathJax_Previe
     return graph</code></pre>
 </details>
 </dd>
-<dt id="MarChie.marchie.MarChie.trans_insteps"><code class="name flex">
+<dt id="marchie.marchie.MarChie.trans_insteps"><code class="name flex">
 <span>def <span class="ident">trans_insteps</span></span>(<span>self, n_steps: int, use_canonical=True) ‑> numpy.ndarray</span>
 </code></dt>
 <dd>
@@ -4611,34 +4611,34 @@ to some state anyway, so the sum of the probabilities of the transitions will be
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="MarChie.marchie.MarChie" href="#MarChie.marchie.MarChie">MarChie</a></code></h4>
+<h4><code><a title="marchie.marchie.MarChie" href="#marchie.marchie.MarChie">MarChie</a></code></h4>
 <ul class="">
-<li><code><a title="MarChie.marchie.MarChie.adjacency_mat" href="#MarChie.marchie.MarChie.adjacency_mat">adjacency_mat</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.canonical_mapping" href="#MarChie.marchie.MarChie.canonical_mapping">canonical_mapping</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.classification_mat" href="#MarChie.marchie.MarChie.classification_mat">classification_mat</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.classification_mat_ext" href="#MarChie.marchie.MarChie.classification_mat_ext">classification_mat_ext</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.communication_mat" href="#MarChie.marchie.MarChie.communication_mat">communication_mat</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.communication_mat_comp" href="#MarChie.marchie.MarChie.communication_mat_comp">communication_mat_comp</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.end_behavior" href="#MarChie.marchie.MarChie.end_behavior">end_behavior</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.equivalency_cls_mat" href="#MarChie.marchie.MarChie.equivalency_cls_mat">equivalency_cls_mat</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.first_trans_insteps" href="#MarChie.marchie.MarChie.first_trans_insteps">first_trans_insteps</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.first_trans_nolaterthan" href="#MarChie.marchie.MarChie.first_trans_nolaterthan">first_trans_nolaterthan</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.generate_chain" href="#MarChie.marchie.MarChie.generate_chain">generate_chain</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.init_distr" href="#MarChie.marchie.MarChie.init_distr">init_distr</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.n_cyclic_subclasses" href="#MarChie.marchie.MarChie.n_cyclic_subclasses">n_cyclic_subclasses</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.n_equivalency_classes" href="#MarChie.marchie.MarChie.n_equivalency_classes">n_equivalency_classes</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.n_essential_states" href="#MarChie.marchie.MarChie.n_essential_states">n_essential_states</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.n_inessential_states" href="#MarChie.marchie.MarChie.n_inessential_states">n_inessential_states</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.n_states" href="#MarChie.marchie.MarChie.n_states">n_states</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.properties" href="#MarChie.marchie.MarChie.properties">properties</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.reachability_mat" href="#MarChie.marchie.MarChie.reachability_mat">reachability_mat</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.reachability_mat_tr" href="#MarChie.marchie.MarChie.reachability_mat_tr">reachability_mat_tr</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.shape" href="#MarChie.marchie.MarChie.shape">shape</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.states_insteps" href="#MarChie.marchie.MarChie.states_insteps">states_insteps</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.structure" href="#MarChie.marchie.MarChie.structure">structure</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.to_graph" href="#MarChie.marchie.MarChie.to_graph">to_graph</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.trans_insteps" href="#MarChie.marchie.MarChie.trans_insteps">trans_insteps</a></code></li>
-<li><code><a title="MarChie.marchie.MarChie.trans_mat" href="#MarChie.marchie.MarChie.trans_mat">trans_mat</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.adjacency_mat" href="#marchie.marchie.MarChie.adjacency_mat">adjacency_mat</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.canonical_mapping" href="#marchie.marchie.MarChie.canonical_mapping">canonical_mapping</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.classification_mat" href="#marchie.marchie.MarChie.classification_mat">classification_mat</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.classification_mat_ext" href="#marchie.marchie.MarChie.classification_mat_ext">classification_mat_ext</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.communication_mat" href="#marchie.marchie.MarChie.communication_mat">communication_mat</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.communication_mat_comp" href="#marchie.marchie.MarChie.communication_mat_comp">communication_mat_comp</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.end_behavior" href="#marchie.marchie.MarChie.end_behavior">end_behavior</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.equivalency_cls_mat" href="#marchie.marchie.MarChie.equivalency_cls_mat">equivalency_cls_mat</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.first_trans_insteps" href="#marchie.marchie.MarChie.first_trans_insteps">first_trans_insteps</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.first_trans_nolaterthan" href="#marchie.marchie.MarChie.first_trans_nolaterthan">first_trans_nolaterthan</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.generate_chain" href="#marchie.marchie.MarChie.generate_chain">generate_chain</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.init_distr" href="#marchie.marchie.MarChie.init_distr">init_distr</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.n_cyclic_subclasses" href="#marchie.marchie.MarChie.n_cyclic_subclasses">n_cyclic_subclasses</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.n_equivalency_classes" href="#marchie.marchie.MarChie.n_equivalency_classes">n_equivalency_classes</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.n_essential_states" href="#marchie.marchie.MarChie.n_essential_states">n_essential_states</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.n_inessential_states" href="#marchie.marchie.MarChie.n_inessential_states">n_inessential_states</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.n_states" href="#marchie.marchie.MarChie.n_states">n_states</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.properties" href="#marchie.marchie.MarChie.properties">properties</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.reachability_mat" href="#marchie.marchie.MarChie.reachability_mat">reachability_mat</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.reachability_mat_tr" href="#marchie.marchie.MarChie.reachability_mat_tr">reachability_mat_tr</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.shape" href="#marchie.marchie.MarChie.shape">shape</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.states_insteps" href="#marchie.marchie.MarChie.states_insteps">states_insteps</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.structure" href="#marchie.marchie.MarChie.structure">structure</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.to_graph" href="#marchie.marchie.MarChie.to_graph">to_graph</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.trans_insteps" href="#marchie.marchie.MarChie.trans_insteps">trans_insteps</a></code></li>
+<li><code><a title="marchie.marchie.MarChie.trans_mat" href="#marchie.marchie.MarChie.trans_mat">trans_mat</a></code></li>
 </ul>
 </li>
 </ul>

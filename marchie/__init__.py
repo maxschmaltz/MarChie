@@ -31,4 +31,7 @@ Given transition probability matrix and (optional) initial state probability dis
 * defines end behavior of the chain (based on the classification).
 '''
 
+from marchie.marchie import MarChie
+
+
 author_mail = 'schmaltzmax@gmail.com'

@@ -76,12 +76,12 @@ Given transition probability matrix and (optional) initial state probability dis
 pip install MarChie
 ```
 
-The main object that is really intended to be used is `class MarChie.marchie.March`. The class requires only transition probability matrix and (optionally) initial state probability distribution vector as arguments; if you provide no initial distribution vector, it will be generated.
+The main object that is really intended to be used is `class marchie.marchie.March`. The class requires only transition probability matrix and (optionally) initial state probability distribution vector as arguments; if you provide no initial distribution vector, it will be generated.
 
 ```python
 
 >>> import numpy as np
->>> from March.marchie import March
+>>> from marchie.marchie import March
 
 >>> trans_mat = np.array([
     [1,     0,     0  ],

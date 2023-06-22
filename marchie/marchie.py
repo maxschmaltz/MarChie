@@ -20,14 +20,10 @@ import numpy as np
 import graphviz
 from typing import Tuple, Dict
 
-from structure import *
-from end_behavior import *
+from marchie.structure import *
+from marchie.end_behavior import *
 
 #endregion
-
-__pdoc__ = {
-    'March._matrix': True
-}
 
 
 class MarChie:

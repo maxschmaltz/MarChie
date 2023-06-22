@@ -3,7 +3,8 @@
 import unittest
 import numpy as np
 
-from marchie import *
+from marchie import MarChie
+from marchie.marchie import *
 
 #endregion
 
