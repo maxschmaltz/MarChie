@@ -1,6 +1,6 @@
 # `MarChie`: a Compact Open Source Tool for Analyzing Discrete **Mar**kov **Ch**ains
 
-[![Generic badge](https://img.shields.io/badge/PyPI-0.1-green.svg)](https://github.com/maxschmaltz/MarChie)
+[![Generic badge](https://img.shields.io/badge/PyPI-0.1-green.svg)](https://pypi.org/project/MarChie/)
 [![Generic badge](https://img.shields.io/badge/GitHub-Source-red.svg)](https://github.com/maxschmaltz/MarChie)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
